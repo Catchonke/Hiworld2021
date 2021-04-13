@@ -30,6 +30,7 @@ pipeline {
                 sh 'docker ps'
             }
         }
+    } 
          post {
         always {
             echo "Always display this message "
