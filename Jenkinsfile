@@ -27,7 +27,7 @@ pipeline {
          stage('push') {
             steps {
                 echo 'Hello push'
-                sh 'docker ps'
+                sh 'docker psd'
             }
         }
     } 
