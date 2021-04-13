@@ -30,5 +30,20 @@ pipeline {
                 sh 'docker ps'
             }
         }
-    }
+         post {
+        always {
+            echo "Always display this message "
+        }
+        failure {
+            echo "Job failed "
+        }
+        success {
+            echo "Successful run "
+        }
+        unstable {
+            echo "The job is unstable "
+        }
+    } 
+
 }
+
